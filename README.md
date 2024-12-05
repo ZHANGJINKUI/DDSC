@@ -19,6 +19,7 @@ pip install -r requirements.txt
 
 > ❗️❗️Replace the trasformers already installed with transformers in the DDSC package
 Besides,if you intend to use Mistral, please update the `transformers` library to version 4.34.0 manually. You can use the following code: `pip install transformers==4.34.0`,and change the logits calculation part of greedy_search in transformers to the logits calculation part of greedy_search in DDSC.
+> 
 Dataset download(Classification Task and Generation Task)：https://1drv.ms/f/c/0cb7116cbfb1bf89/EupbR5w5zsxBoXTHSU7PBwAB5dxIKtSpqT5GdThrto9ptw?e=0bcS2i
 
 ---
