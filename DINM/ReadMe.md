@@ -94,6 +94,19 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 | SFT+DSCD_MODE-2     | 104.25  |
 | DPO+DSCD_MODE-2     | 105.62  |
 
+# Llama2-7b-chat(Roberta)
+| Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
+|------------------|-------|----------|-----------|-----------|------------|--------|---------|
+| SafeDecoding       | 40.00 | **98.00**   | **26.00**     | _44.00_     | 90.00      | 59.60  | 6.68    |
+|     DSCD         | 40.00 | **98.00**  | **26.00**     | **46.00**     | _94.00_  | 60.80  | 6.79    |
+| SafeDecoding+DSCD            | **44.00** | **98.00**    | **26.00**     | **46.0**0     | **96.00**      | **62.00**  | **6.79** |
+
+# Llama2-7b-chat(GPT-4o)
+| Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
+|------------------|-------|----------|-----------|-----------|------------|--------|---------|
+| SafeDecoding       | _94.00_ | **100.00**    | 54.00     | **92.00**     | **96.00**      | 87.20  | 6.68    |
+|     DSCD         | **96.00** | **100.00**  | **72.00**     | **92.00**     | 84.00  | **88.80**  | 6.79    |
+| SafeDecoding+DSCD            | _94.00_ | _98.00_    | _70.00_     | _88.00_     | _90.00_      | _88.00_  | **6.79** |
 # Prompt for Evaluation of Harmful Queries
 | Category          | Description |
 |------------------|------------|
