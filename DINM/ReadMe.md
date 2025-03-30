@@ -17,14 +17,15 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 |                                | DPO+DSCD_MODE-1        | 56.00 | 92.00    | 53.00     | 52.00     | 53.00      | 61.20  | _6.90_   |
 |                                | DPO+DSCD_MODE-2        | 80.00 | 97.00    | 64.00     | 85.00     | 54.00      | 76.00  | 5.55     |
 
-*** 
-
+| **Model**                      | Method                 | DS   | DG_onlyQ | DG_otherA | DG_otherQ | DG_otherAQ | DG-Avg | Fluency  |
+|--------------------------------|------------------------|------|----------|-----------|-----------|------------|--------|---------|
 |                                | SFT                    | 64.00 | 96.00    | 64.00     | 82.00     | 58.00      | 72.80  | _7.00_   |
 |                                | SFT+DSCD_MODE-1        | 64.00 | 96.00    | 64.00     | 82.00     | 58.00      | 72.80  | _7.00_   |
 |                                | SFT+DSCD_MODE-2        | 78.00 | 96.00    | 74.00     | 78.00     | 68.00      | 58.40  | 7.01     |
 | **Qwen2-7b-instruct**          | DPO                    | 43.99 | 88.00    | 34.00     | 43.99     | 43.99      | 50.79  | **7.68** |
 |                                | DPO+DSCD_MODE-1        | 52.00 | 78.00    | 43.99     | 52.00     | 43.99      | 53.99  | _7.45_   |
 |                                | DPO+DSCD_MODE-2        | 54.00 | 86.00    | 48.00     | 62.00     | 42.00      | 58.40  | 7.21     |
+
 
 
 # Prompt for Evaluation of Harmful Queries
