@@ -9,7 +9,7 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 ### **Q1: Aside from DINM and SafeDecoding, did you do any comparisons against safety alignment techniques?**
 **A1:** Thank you for your suggestion. 
 | Model                          | Method           | DS    | DG_onlyQ | DG_otherA | DG_otherQ | DG_otherAQ | DG-Avg | Fluency |
-|--------------------------- ----|-----------------|-------|----------|-----------|-----------|------------|--------|----------|
+|--------------------------------|-----------------|-------|----------|-----------|-----------|------------|--------|----------|
 |                                | SFT             | 74.00 | 94.00    | 63.00     | 66.00     | 62.00      | 71.80  | **4.29** |
 |                                | SFT+DSCD_MODE-1 | 77.00 | 94.00    | 67.00     | 81.00     | 56.00      | 75.00  | _5.04_   |
 |                                | SFT+DSCD_MODE-2 | 80.00 | 97.00    | 64.00     | 85.00     | 54.00      | 76.00  | 5.55     |
