@@ -34,6 +34,29 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 | DPO+DSCD_MODE-1 | 52.00 | 78.00    | 43.99     | 52.00     | 43.99      | 53.99  | 7.45    |
 | DPO+DSCD_MODE-2 | 54.00 | 86.00    | 48.00     | 62.00     | 42.00      | 58.40  | 7.21    |
 
+### Llama2-7b-uncensored-chat
+
+| Method               | Time ↓  |
+|----------------------|---------|
+| Vanilla             | 65.98   |
+| SFT                 | _33.05_  |
+| DPO                 | 66.82   |
+| DSCD_MODE-2         | 56.54   |
+| **SFT+DSCD_MODE-2** | **29.31** |
+| DPO+DSCD_MODE-2     | 70.89   |
+
+---
+
+### Qwen2-7b-instruct
+
+| Method               | Time ↓  |
+|----------------------|---------|
+| **Vanilla**         | **74.52** |
+| SFT                 | 75.67   |
+| _DPO_               | _74.94_  |
+| DSCD_MODE-2         | 86.51   |
+| SFT+DSCD_MODE-2     | 104.25  |
+| DPO+DSCD_MODE-2     | 105.62  |
 
 # Prompt for Evaluation of Harmful Queries
 | Category          | Description |
