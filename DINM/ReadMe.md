@@ -9,7 +9,7 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 ### **Q1: Aside from DINM and SafeDecoding, did you do any comparisons against safety alignment techniques?**
 **A1:** Thank you for your suggestion. 
 # Llama2-7b-chat-uncensored
-| Method            | DS    | DG_onlyQ | DG_otherA | DG_otherQ | DG_otherAQ | DG-Avg | Fluency  |
+| Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
 |------------------|-------|----------|-----------|-----------|------------|--------|---------|
 | Vanilla        | 30.74 | 48.15    | 33.70     | 34.81     | 32.59      | 36.00  | 6.85    |
 | SFT            | 74.00 | _94.00_  | 63.00     | 66.00     | **62.00**  | 71.80  | 4.29    |
@@ -22,7 +22,7 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 | DPO+DSCD_MODE-2 | 55.00 | 92.00    | 56.00     | 59.00     | 42.00      | 60.80  | _6.97_  |
 
 # Qwen2-7b-instruct
-| Method            | DS    | DG_onlyQ | DG_otherA | DG_otherQ | DG_otherAQ | DG-Avg | Fluency  |
+| Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
 |------------------|-------|----------|-----------|-----------|------------|--------|---------|
 | Vanilla        | 37.04 | 76.30    | 31.85     | 36.30     | 28.89      | 42.07  | **7.82** |
 | SFT            | 34.00 | _92.00_  | 50.00     | 52.00     | 54.00      | 56.40  | 7.39    |
