@@ -67,8 +67,8 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 |----------------------|---------|
 | Vanilla             | 65.98   |
 | SafeDecoding                 | 15.08  |
-| SafeDecoding+DSCD                 | 13.33   |
-| DSCD         | 16.03   |
+| SafeDecoding+DSCD_MODE-2                 | 13.33   |
+| DSCD_MODE-2         | 16.03   |
 
 ### Llama2-7b-uncensored-chat
 
@@ -98,15 +98,15 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 | Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
 |------------------|-------|----------|-----------|-----------|------------|--------|---------|
 | SafeDecoding       | 40.00 | **98.00**   | **26.00**     | _44.00_     | 90.00      | 59.60  | 6.68    |
-|     DSCD         | 40.00 | **98.00**  | **26.00**     | **46.00**     | _94.00_  | 60.80  | 6.79    |
-| SafeDecoding+DSCD            | **44.00** | **98.00**    | **26.00**     | **46.0**0     | **96.00**      | **62.00**  | **6.79** |
+|     DSCD_MODE-2         | 40.00 | **98.00**  | **26.00**     | **46.00**     | _94.00_  | 60.80  | 6.79    |
+| SafeDecoding+DSCD_MODE-2            | **44.00** | **98.00**    | **26.00**     | **46.0**0     | **96.00**      | **62.00**  | **6.79** |
 
 # Llama2-7b-chat(GPT-4o)
 | Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
 |------------------|-------|----------|-----------|-----------|------------|--------|---------|
 | SafeDecoding       | _94.00_ | **100.00**    | 54.00     | **92.00**     | **96.00**      | 87.20  | 6.68    |
-|     DSCD         | **96.00** | **100.00**  | **72.00**     | **92.00**     | 84.00  | **88.80**  | 6.79    |
-| SafeDecoding+DSCD            | _94.00_ | _98.00_    | _70.00_     | _88.00_     | _90.00_      | _88.00_  | **6.79** |
+|     DSCD_MODE-2         | **96.00** | **100.00**  | **72.00**     | **92.00**     | 84.00  | **88.80**  | 6.79    |
+| SafeDecoding+DSCD_MODE-2            | _94.00_ | _98.00_    | _70.00_     | _88.00_     | _90.00_      | _88.00_  | **6.79** |
 # Prompt for Evaluation of Harmful Queries
 | Category          | Description |
 |------------------|------------|
