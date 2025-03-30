@@ -8,7 +8,7 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 
 ### **Q1: Aside from DINM and SafeDecoding, did you do any comparisons against safety alignment techniques?**
 **A1:** Thank you for your suggestion. 
-# Llama2-7b-chat-uncensored
+# Llama2-7b-chat-uncensored(Roberta)
 | Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
 |------------------|-------|----------|-----------|-----------|------------|--------|---------|
 | Vanilla        | 30.74 | 48.15    | 33.70     | 34.81     | 32.59      | 36.00  | 6.85    |
@@ -21,7 +21,7 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 | DPO+DSCD_MODE-1 | 56.00 | 92.00    | 53.00     | 52.00     | 53.00      | 61.20  | 6.90    |
 | DPO+DSCD_MODE-2 | 55.00 | 92.00    | 56.00     | 59.00     | 42.00      | 60.80  | _6.97_  |
 
-# Qwen2-7b-instruct
+# Qwen2-7b-instruct(Roberta)
 | Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
 |------------------|-------|----------|-----------|-----------|------------|--------|---------|
 | Vanilla        | 37.04 | 76.30    | 31.85     | 36.30     | 28.89      | 42.07  | **7.82** |
@@ -33,6 +33,42 @@ We sincerely appreciate the reviewers' valuable comments and constructive feedba
 | **SFT+DSCD_MODE-2**  | **78.00** | **94.00** | **64.00** | _76.00_ | **58.00**  | **74.00** | 7.01    |
 | DPO+DSCD_MODE-1 | 52.00 | 78.00    | 43.99     | 52.00     | 43.99      | 53.99  | 7.45    |
 | DPO+DSCD_MODE-2 | 54.00 | 86.00    | 48.00     | 62.00     | 42.00      | 58.40  | 7.21    |
+
+# Llama2-7b-chat-uncensored(GPT-4o)
+| Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
+|------------------|-------|----------|-----------|-----------|------------|--------|---------|
+| Vanilla        | 25.71 | 68.53    | 31.43     | 42.86     | 45.71      | 42.86  | 7.33    |
+| SFT            | 80.00 | 96.00  | 64.00     | 70.00     | 64.00  | 74.80  | 4.29    |
+| DPO            | 52.00 | 86.00    | 49.00     | 55.00     | 40.00      | 56.40  | **6.99** |
+| DSCD_MODE-1    | 40.82 | 67.35    | 40.82     | 34.69     | 44.90      | 45.72  | 6.87    |
+| DSCD_MODE-2    | 42.86 | 69.39    | 42.86     | 30.61     | 36.73      | 44.49  | 6.71    |
+| SFT+DSCD_MODE-1 | _77.00_ | _94.00_ | **67.00** | _81.00_  | _56.00_   | _75.00_ | 5.04    |
+| **SFT+DSCD_MODE-2**  | **80.00** | **97.00** | _64.00_ | **85.00** | 54.00      | **76.00** | 5.55    |
+| DPO+DSCD_MODE-1 | 56.00 | 92.00    | 53.00     | 52.00     | 53.00      | 61.20  | 6.90    |
+| DPO+DSCD_MODE-2 | 55.00 | 92.00    | 56.00     | 59.00     | 42.00      | 60.80  | _6.97_  |
+
+# Qwen2-7b-instruct(GPT-4o)
+| Method            | DS ↑    | DG_onlyQ ↑ | DG_otherA ↑ | DG_otherQ ↑ | DG_otherAQ ↑ | DG-Avg ↑ | Fluency ↑  |
+|------------------|-------|----------|-----------|-----------|------------|--------|---------|
+| Vanilla        | 32.65 | 67.35    | 26.53     | 36.73     | 20.41      | 36.73  | **7.82** |
+| SFT            | 48.00 | _94.00_  | 58.00     | 58.00     | 54.00      | 62.40  | 7.39    |
+| DPO            | 40.0 | 88.0    | 44.0     | 36.0     | 36.0      | 48.8  | _7.63_  |
+| DSCD_MODE-1    | 36.73 | 63.27    | 40.82     | 34.69     | 32.65      | 41.63  | 7.49    |
+| DSCD_MODE-2    | 28.57 | 67.35    | 32.65     | 44.90     | 36.73      | 42.04  | 7.00    |
+| SFT+DSCD_MODE-1 | _58.00_ | **96.00** |**70.00** | **74.00** |_56.00_    | **70.80** | 7.00    |
+| **SFT+DSCD_MODE-2**  | **70.00** | **96.00**    | _60.00_     | _64.00_     | **58.00**      | _69.60_  | 7.01    |
+| DPO+DSCD_MODE-1 | 40.0 | 94.0    | 54.0     | 42.0     | 48.0      | 55.6  | 7.45    |
+| DPO+DSCD_MODE-2 | 56.0 | 92.0    | 46.0     | 54.00     | 44.0      | 58.4  | 7.21    |
+
+
+### Llama2-7b-uncensored-chat
+
+| Method               | PPL ↓  |
+|----------------------|---------|
+| Vanilla             | 65.98   |
+| SafeDecoding                 | 15.08  |
+| SafeDecoding+DSCD                 | 13.33   |
+| DSCD         | 16.03   |
 
 ### Llama2-7b-uncensored-chat
 
